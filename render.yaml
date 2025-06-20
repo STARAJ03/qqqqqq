@@ -1,0 +1,8 @@
+services:
+  - type: worker
+    name: extractor-worker
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    branch: main  # ya aapki Git branch ka naam
+    autoDeploy: true
